@@ -1,0 +1,18 @@
+{
+	"name": "float",
+	"version": "0.0.1",
+	"description": "Float calculation",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha --reporter spec --recursive ./test.js"
+	},
+	"repository": "",
+	"author": "Michael Storgaard",
+	"license": "none",
+	"dependencies": {
+		"underscore": "~1.4.2"
+	},
+	"devDependencies": {
+		"mocha": "*"
+	}
+}
