@@ -4,7 +4,7 @@
 	"description": "Float calculation",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha --reporter spec --recursive ./test.js"
+		"test": "mocha --reporter spec ./test.js"
 	},
 	"repository": "",
 	"author": "Michael Storgaard",
