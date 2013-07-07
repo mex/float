@@ -1,18 +1,21 @@
 {
-  "name": "float",
-  "version": "0.1.0",
-  "description": "Float calculation",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha --reporter spec ./test.js"
-  },
-  "repository": "",
-  "author": "Michael Storgaard",
-  "license": "none",
-  "dependencies": {
-    "underscore": "~1.4.2"
-  },
-  "devDependencies": {
-    "mocha": "*"
-  }
+	"name": "float",
+	"version": "0.1.0",
+	"description": "Provides methods for comparing and calculating with floating point numbers",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha --reporter spec ./test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/billysbilling/shopify-integration"
+	},
+	"author": "Michael Storgaard",
+	"license": "none",
+	"dependencies": {
+		"underscore": "~1.4.2"
+	},
+	"devDependencies": {
+		"mocha": "*"
+	}
 }
