@@ -1,4 +1,5 @@
 # Float
+[![Build Status](https://travis-ci.org/mstorgaard/float.png)](https://travis-ci.org/mstorgaard/float)
 
 ## Usage
 * `round(number, precision)`
