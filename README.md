@@ -15,6 +15,8 @@
       * b (float)
       * ... (floats)
       * options (object): See details under [Options](#options)
+   * Return:
+      * float
 * `subtract(a, b, ...[, options])`
    * Subtracts the arguments given.
    * Parameters:
