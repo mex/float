@@ -1,18 +1,18 @@
 {
-	"name": "float",
-	"version": "0.0.1",
-	"description": "Float calculation",
-	"main": "index.js",
-	"scripts": {
-		"test": "mocha --reporter spec ./test.js"
-	},
-	"repository": "",
-	"author": "Michael Storgaard",
-	"license": "none",
-	"dependencies": {
-		"underscore": "~1.4.2"
-	},
-	"devDependencies": {
-		"mocha": "*"
-	}
+  "name": "float",
+  "version": "0.1.0",
+  "description": "Float calculation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec ./test.js"
+  },
+  "repository": "",
+  "author": "Michael Storgaard",
+  "license": "none",
+  "dependencies": {
+    "underscore": "~1.4.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
 }
