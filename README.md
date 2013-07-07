@@ -2,10 +2,12 @@
 
 ## Usage
 * round(`number`, `precision`)
-* `a + b`: add(`a`, `b`)
-* `a - b`: subtract(`a`, `b`)
-* `a * b`: multiply(`a`, `b`)
-* `a / b`: divide(`a`, `b`)
-* `(a + b + c) / 3`: avg(`a`, `b`, `c`)
+* `a + b`: add(`a`, `b`[, options])
+* `a - b`: subtract(`a`, `b`[, options])
+* `a * b`: multiply(`a`, `b`[, options])
+* `a / b`: divide(`a`, `b`[, options])
+* `(a + b + c) / 3`: avg(`a`, `b`, `c`[, options])
 
-You can optionally add an options object as the last argument, `divide(1, 3, { precision: 3})` = 0.333
+The following options are available:
+* precision (number of decimals)
+Example: `divide(1, 3, { precision: 3})` = 0.333
