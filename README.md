@@ -6,6 +6,8 @@
    * Parameters:
       * number (float)
       * precision (integer): Number of decimals
+   * Return:
+      * float
 * `add(a, b, ...[, options])`
    * Adds the arguments given.
    * Parameters:
@@ -20,6 +22,8 @@
       * b (float)
       * ... (floats)
       * options (object): See details under [Options](#options)
+   * Return:
+      * float
 * `multiply(a, b, ...[, options])`
    * Multiplies the arguments given.
    * Parameters:
@@ -27,6 +31,8 @@
       * b (float)
       * ... (floats)
       * options (object): See details under [Options](#options)
+   * Return:
+      * float
 * `divide(a, b, ...[, options])`
    * Divides the arguments given.
    * Parameters:
@@ -34,6 +40,8 @@
       * b (float)
       * ... (floats)
       * options (object): See details under [Options](#options)
+   * Return:
+      * float
 * `avg(a, b, ...[, options])`
    * Averages the arguments given.
    * Parameters:
@@ -41,6 +49,8 @@
       * b (float)
       * ... (floats)
       * options (object): See details under [Options](#options)
+   * Return:
+      * float
 
 ### Options
 * `precision` (number of decimals)
