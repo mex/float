@@ -8,6 +8,46 @@
       * precision (integer): Number of decimals
    * Return:
       * float
+* `equals(a, b[, options])`
+   * Adds the arguments given.
+   * Parameters:
+      * a (float)
+      * b (float)
+      * options (object): See details under [Options](#options)
+   * Return:
+      * boolean
+* `lessThan(a, b[, options])`
+   * Adds the arguments given.
+   * Parameters:
+      * a (float)
+      * b (float)
+      * options (object): See details under [Options](#options)
+   * Return:
+      * boolean
+* `lessThanOrEquals(a, b[, options])`
+   * Adds the arguments given.
+   * Parameters:
+      * a (float)
+      * b (float)
+      * options (object): See details under [Options](#options)
+   * Return:
+      * boolean
+* `greaterThan(a, b[, options])`
+   * Adds the arguments given.
+   * Parameters:
+      * a (float)
+      * b (float)
+      * options (object): See details under [Options](#options)
+   * Return:
+      * boolean
+* `greaterThanOrEquals(a, b[, options])`
+   * Adds the arguments given.
+   * Parameters:
+      * a (float)
+      * b (float)
+      * options (object): See details under [Options](#options)
+   * Return:
+      * boolean
 * `add(a, b, ...[, options])`
    * Adds the arguments given.
    * Parameters:
