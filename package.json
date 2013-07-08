@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/billysbilling/shopify-integration"
+    "url": "git://github.com/mstorgaard/float"
   },
   "author": "Michael Storgaard",
   "license": "none",
