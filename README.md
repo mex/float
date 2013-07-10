@@ -10,7 +10,7 @@
    * Return:
       * float
 * `equals(a, b[, options])`
-   * Adds the arguments given.
+   * Compares the arguments and return whether they are equal.
    * Parameters:
       * a (float)
       * b (float)
@@ -18,7 +18,7 @@
    * Return:
       * boolean
 * `lessThan(a, b[, options])`
-   * Adds the arguments given.
+   * Compares the arguments and return whether a is less than b.
    * Parameters:
       * a (float)
       * b (float)
@@ -26,7 +26,7 @@
    * Return:
       * boolean
 * `lessThanOrEquals(a, b[, options])`
-   * Adds the arguments given.
+   * Compares the arguments and return whether a is less than or equal to b.
    * Parameters:
       * a (float)
       * b (float)
@@ -34,7 +34,7 @@
    * Return:
       * boolean
 * `greaterThan(a, b[, options])`
-   * Adds the arguments given.
+   * Compares the arguments and return whether a is greater than b.
    * Parameters:
       * a (float)
       * b (float)
@@ -42,7 +42,7 @@
    * Return:
       * boolean
 * `greaterThanOrEquals(a, b[, options])`
-   * Adds the arguments given.
+   * Compares the arguments and return whether a is greater than or equal to b.
    * Parameters:
       * a (float)
       * b (float)
