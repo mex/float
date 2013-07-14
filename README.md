@@ -5,6 +5,21 @@
 Install through [NPM](http://npmjs.org/package/float): `npm install float`
 
 ## Usage
+```
+var f = require('float');
+
+var a = 2.15;
+var b = 3.46;
+var c = 5.61;
+var ab = f.add(a, b);
+if (f.equals(ab, c) {
+  console.log('They are equal!');
+} else {
+  console.log('Someone clearly failed at some point...');
+}
+```
+
+## Documentation
 * `round(number, precision)`
    * Rounds the number to the given number of decimals.
    * Parameters:
