@@ -11,6 +11,9 @@
     "url": "git://github.com/mstorgaard/float"
   },
   "author": "Michael Storgaard",
+  "bugs": {
+    "url": "https://github.com/mstorgaard/float/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "underscore": "~1.4.2"
