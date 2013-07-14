@@ -1,6 +1,9 @@
 # Float
 [![Build Status](https://travis-ci.org/mstorgaard/float.png)](https://travis-ci.org/mstorgaard/float)
 
+## Install
+Install through [NPM](http://npmjs.org/package/float): `npm install float`
+
 ## Usage
 * `round(number, precision)`
    * Rounds the number to the given number of decimals.
