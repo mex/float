@@ -1,5 +1,9 @@
 # Float
-Travis build status: [![Build Status](https://travis-ci.org/mstorgaard/float.png)](https://travis-ci.org/mstorgaard/float)
+Travis build status:  
+[![Build Status](https://travis-ci.org/mstorgaard/float.png)](https://travis-ci.org/mstorgaard/float)
+
+GitHub repository: [github.com/mstorgaard/float](http://github.com/mstorgaard/float)  
+NPM package: [npmjs.org/package/float](http://npmjs.org/package/float)
 
 ## Install
 Install through [NPM](http://npmjs.org/package/float): `npm install float`
