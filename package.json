@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mstorgaard/float"
+    "url": "git://github.com/mex/float"
   },
   "author": "Michael Storgaard",
   "bugs": {
-    "url": "https://github.com/mstorgaard/float/issues"
+    "url": "https://github.com/mex/float/issues"
   },
   "license": "MIT",
   "dependencies": {
