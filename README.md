@@ -1,8 +1,8 @@
 # Float
 Travis build status:  
-[![Build Status](https://travis-ci.org/mstorgaard/float.png)](https://travis-ci.org/mstorgaard/float)
+[![Build Status](https://travis-ci.org/mex/float.png)](https://travis-ci.org/mex/float)
 
-GitHub repository: [github.com/mstorgaard/float](http://github.com/mstorgaard/float)  
+GitHub repository: [github.com/mstorgaard/float](http://github.com/mex/float)  
 NPM package: [npmjs.org/package/float](http://npmjs.org/package/float)
 
 ## Install
