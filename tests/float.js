@@ -4,11 +4,14 @@ var assert = require('assert'),
 describe('float', function () {
 
 	it('round', function() {
+		assert.equal(f.round(0.1234), 0.12);
+		assert.equal(f.round(0.005), 0.01);
 		assert.equal(f.round(0.1234, 2), 0.12);
 		assert.equal(f.round(0.005, 2), 0.01);
 		assert.equal(f.round(1.009999, 4), 1.01);
 		assert.equal(f.round(1.00499, 2), 1);
 		assert.equal(f.round(1.005, 2), 1.01);
+		assert.equal(f.round(1.105, 2), 1.11);
 		assert.equal(f.round(28973, 2), 28973);
 	});
 
@@ -36,6 +39,7 @@ describe('float', function () {
 		assert.equal(f.equals(0.005, 0.01, { precision: 3 }), false);
 		assert.equal(f.equals(1.009999, 1.01), true);
 		assert.equal(f.equals(1.00499, 1), true);
+		assert.equal(f.equals(1.005, 1.01), true);
 		assert.equal(f.equals(28973, 2), false);
 	});
 
@@ -45,6 +49,7 @@ describe('float', function () {
 		assert.equal(f.lessThan(0.005, 0.01, { precision: 3 }), true);
 		assert.equal(f.lessThan(1.009999, 4), true);
 		assert.equal(f.lessThan(1.00499, 2), true);
+		assert.equal(f.lessThan(1.00499, 1.01), true);
 		assert.equal(f.lessThan(28973, 2), false);
 	});
 
@@ -54,6 +59,7 @@ describe('float', function () {
 		assert.equal(f.lessThanOrEquals(0.005, 0.01, { precision: 3 }), true);
 		assert.equal(f.lessThanOrEquals(1.009999, 4), true);
 		assert.equal(f.lessThanOrEquals(1.00499, 2), true);
+		assert.equal(f.lessThanOrEquals(1.00499, 1.01), true);
 		assert.equal(f.lessThanOrEquals(28973, 2), false);
 	});
 
@@ -63,6 +69,7 @@ describe('float', function () {
 		assert.equal(f.greaterThan(0.01, 0.005, { precision: 3 }), true);
 		assert.equal(f.greaterThan(4, 1.009999), true);
 		assert.equal(f.greaterThan(2, 1.00499), true);
+		assert.equal(f.greaterThan(1.01, 1.00499), true);
 		assert.equal(f.greaterThan(2, 28973), false);
 	});
 
@@ -72,6 +79,7 @@ describe('float', function () {
 		assert.equal(f.greaterThanOrEquals(0.01, 0.005, { precision: 3 }), true);
 		assert.equal(f.greaterThanOrEquals(4, 1.009999), true);
 		assert.equal(f.greaterThanOrEquals(2, 1.00499), true);
+		assert.equal(f.greaterThanOrEquals(1.01, 1.00499), true);
 		assert.equal(f.greaterThanOrEquals(2, 28973), false);
 	});
 
