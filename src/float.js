@@ -21,6 +21,7 @@
 };
 
 var round = function(v, d) {
+  v = v || 0;
   d = d === undefined ? -2 : -Math.abs(d);
   return decimalAdjust('round', v, d);
 };
@@ -28,10 +29,12 @@ var round = function(v, d) {
 module.exports = {
   round: round,
   floor: function(v, d) {
+    v = v || 0;
     d = d === undefined ? -2 : -Math.abs(d);
     return decimalAdjust('floor', v, d);
   },
   ceil: function(v, d) {
+    v = v || 0;
     d = d === undefined ? -2 : -Math.abs(d);
     return decimalAdjust('ceil', v, d);
   },
