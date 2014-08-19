@@ -8,6 +8,8 @@ NPM package: [npmjs.org/package/float](http://npmjs.org/package/float)
 ## Install
 Install through [NPM](http://npmjs.org/package/float): `npm install float`
 
+Install through Bower: `bower install float`
+
 ## Usage
 ```
 var f = require('float');
