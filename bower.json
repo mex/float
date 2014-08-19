@@ -5,7 +5,7 @@
   "authors": [
     "Michael Storgaard <float@mex.io>"
   ],
-  "description": "Provides methods for comparing and calculating with floating point numbers",
+  "description": "Provides methods for comparing and rounding floating point numbers",
   "main": "src/float.js",
   "keywords": [
     "float",
@@ -13,12 +13,11 @@
     "numbers",
     "integer",
     "number",
-    "calculation",
+    "rounding",
     "comparing",
     "comparison",
-    "calculating",
     "compare",
-    "calculate"
+    "round"
   ],
   "license": "MIT",
   "ignore": [

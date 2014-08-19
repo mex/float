@@ -1,7 +1,7 @@
 {
   "name": "float",
   "version": "0.2.1",
-  "description": "Provides methods for comparing and calculating with floating point numbers",
+  "description": "Provides methods for comparing and rounding floating point numbers",
   "main": "src/float.js",
   "scripts": {
     "test": "mocha --reporter spec ./tests"

@@ -3,6 +3,7 @@ Travis build status:
 [![Build Status](https://travis-ci.org/mex/float.png)](https://travis-ci.org/mex/float)
 
 GitHub repository: [github.com/mex/float](http://github.com/mex/float)
+
 NPM package: [npmjs.org/package/float](http://npmjs.org/package/float)
 
 ## Install
@@ -17,7 +18,7 @@ var f = require('float');
 var a = 2.15;
 var b = 3.46;
 var c = 5.61;
-var ab = f.add(a, b);
+var ab = f.round(a + b);
 if (f.equals(ab, c) {
   console.log('They are equal!');
 } else {
@@ -47,93 +48,43 @@ if (f.equals(ab, c) {
       * precision (integer): Number of decimals
    * Return:
       * float
-* `equals(a, b[, options])`
+* `equals(a, b[, d])`
    * Compares the arguments and return whether they are equal.
    * Parameters:
       * a (float)
       * b (float)
-      * options (object): See details under [Options](#options)
+      * d (integer): Number of decimals
    * Return:
       * boolean
-* `lessThan(a, b[, options])`
+* `lessThan(a, b[, d])`
    * Compares the arguments and return whether a is less than b.
    * Parameters:
       * a (float)
       * b (float)
-      * options (object): See details under [Options](#options)
+      * d (integer): Number of decimals
    * Return:
       * boolean
-* `lessThanOrEquals(a, b[, options])`
+* `lessThanOrEquals(a, b[, d])`
    * Compares the arguments and return whether a is less than or equal to b.
    * Parameters:
       * a (float)
       * b (float)
-      * options (object): See details under [Options](#options)
+      * d (integer): Number of decimals
    * Return:
       * boolean
-* `greaterThan(a, b[, options])`
+* `greaterThan(a, b[, d])`
    * Compares the arguments and return whether a is greater than b.
    * Parameters:
       * a (float)
       * b (float)
-      * options (object): See details under [Options](#options)
+      * d (integer): Number of decimals
    * Return:
       * boolean
-* `greaterThanOrEquals(a, b[, options])`
+* `greaterThanOrEquals(a, b[, d])`
    * Compares the arguments and return whether a is greater than or equal to b.
    * Parameters:
       * a (float)
       * b (float)
-      * options (object): See details under [Options](#options)
+      * d (integer): Number of decimals
    * Return:
       * boolean
-* `add(a, b, ...[, options])`
-   * Adds the arguments given.
-   * Parameters:
-      * a (float)
-      * b (float)
-      * ... (floats)
-      * options (object): See details under [Options](#options)
-   * Return:
-      * float
-* `subtract(a, b, ...[, options])`
-   * Subtracts the arguments given.
-   * Parameters:
-      * a (float)
-      * b (float)
-      * ... (floats)
-      * options (object): See details under [Options](#options)
-   * Return:
-      * float
-* `multiply(a, b, ...[, options])`
-   * Multiplies the arguments given.
-   * Parameters:
-      * a (float)
-      * b (float)
-      * ... (floats)
-      * options (object): See details under [Options](#options)
-   * Return:
-      * float
-* `divide(a, b, ...[, options])`
-   * Divides the arguments given.
-   * Parameters:
-      * a (float)
-      * b (float)
-      * ... (floats)
-      * options (object): See details under [Options](#options)
-   * Return:
-      * float
-* `avg(a, b, ...[, options])`
-   * Averages the arguments given.
-   * Parameters:
-      * a (float)
-      * b (float)
-      * ... (floats)
-      * options (object): See details under [Options](#options)
-   * Return:
-      * float
-
-### Options
-* `precision` (number of decimals)
-
-Example: `divide(1, 3, { precision: 3})` = 0.333

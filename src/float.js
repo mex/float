@@ -1,26 +1,28 @@
-var decimalAdjust = require('./helpers/decimal-adjust'),
-    o = require('./helpers/object'),
-    processArgs = require('./helpers/process-arguments');
+/**
+ * Credit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
+ */
+ var decimalAdjust = function(type, value, exp) {
+  // If the exp is undefined or zero...
+  if (typeof exp === 'undefined' || +exp === 0) {
+    return Math[type](value);
+  }
+  value = +value;
+  exp = +exp;
+  // If the value is not a number or the exp is not an integer...
+  if (isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
+    return NaN;
+  }
+  // Shift
+  value = value.toString().split('e');
+  value = Math[type](+(value[0] + 'e' + (value[1] ? (+value[1] - exp) : -exp)));
+  // Shift back
+  value = value.toString().split('e');
+  return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
+};
 
 var round = function(v, d) {
   d = d === undefined ? -2 : -Math.abs(d);
   return decimalAdjust('round', v, d);
-};
-
-var add = function(a, b) {
-  return a + b;
-};
-
-var subtract = function(a, b) {
-  return a - b;
-};
-
-var multiply = function(a, b) {
-  return a * b;
-};
-
-var divide = function(a, b) {
-  return a / b;
 };
 
 module.exports = {
@@ -33,54 +35,19 @@ module.exports = {
     d = d === undefined ? -2 : -Math.abs(d);
     return decimalAdjust('ceil', v, d);
   },
-  equals: function(a, b) {
-    var p = processArgs(arguments);
-    return round(a, p.precision) == round(b, p.precision);
+  equals: function(a, b, d) {
+    return round(a, d) == round(b, d);
   },
-  lessThan: function(a, b) {
-    var p = processArgs(arguments);
-    return round(a, p.precision) < round(b, p.precision);
+  lessThan: function(a, b, d) {
+    return round(a, d) < round(b, d);
   },
-  lessThanOrEquals: function(a, b) {
-    var p = processArgs(arguments);
-    return round(a, p.precision) <= round(b, p.precision);
+  lessThanOrEquals: function(a, b, d) {
+    return round(a, d) <= round(b, d);
   },
-  greaterThan: function(a, b) {
-    var p = processArgs(arguments);
-    return round(a, p.precision) > round(b, p.precision);
+  greaterThan: function(a, b, d) {
+    return round(a, d) > round(b, d);
   },
-  greaterThanOrEquals: function(a, b) {
-    var p = processArgs(arguments);
-    return round(a, p.precision) >= round(b, p.precision);
-  },
-  add: function() {
-    var p = processArgs(arguments),
-        args = o.values(p.args),
-        first = args.shift();
-    return round(args.reduce(add, first), p.precision);
-  },
-  subtract: function() {
-    var p = processArgs(arguments),
-        args = o.values(p.args),
-        first = args.shift();
-    return round(args.reduce(subtract, first), p.precision);
-  },
-  multiply: function() {
-    var p = processArgs(arguments),
-        args = o.values(p.args),
-        first = args.shift();
-    return round(args.reduce(multiply, first), p.precision);
-  },
-  divide: function() {
-    var p = processArgs(arguments),
-        args = o.values(p.args),
-        first = args.shift();
-    return round(args.reduce(divide, first), p.precision);
-  },
-  avg: function() {
-    var p = processArgs(arguments),
-        args = o.values(p.args),
-        sum = round(args.reduce(add, 0), p.precision);
-    return round(divide(sum, p.count), p.precision);
+  greaterThanOrEquals: function(a, b, d) {
+    return round(a, d) >= round(b, d);
   }
 };
