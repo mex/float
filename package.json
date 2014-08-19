@@ -1,6 +1,6 @@
 {
   "name": "float",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Provides methods for comparing and calculating with floating point numbers",
   "main": "src/float.js",
   "scripts": {
