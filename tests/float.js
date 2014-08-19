@@ -1,5 +1,5 @@
 var assert = require('assert'),
-		f = require('./index');
+		f = require('../src/float');
 
 describe('float', function () {
 
@@ -8,7 +8,26 @@ describe('float', function () {
 		assert.equal(f.round(0.005, 2), 0.01);
 		assert.equal(f.round(1.009999, 4), 1.01);
 		assert.equal(f.round(1.00499, 2), 1);
+		assert.equal(f.round(1.005, 2), 1.01);
 		assert.equal(f.round(28973, 2), 28973);
+	});
+
+	it('floor', function() {
+		assert.equal(f.floor(0.1234, 2), 0.12);
+		assert.equal(f.floor(0.005, 2), 0);
+		assert.equal(f.floor(1.009999, 4), 1.0099);
+		assert.equal(f.floor(1.00499, 2), 1);
+		assert.equal(f.floor(1.005, 2), 1);
+		assert.equal(f.floor(28973, 2), 28973);
+	});
+
+	it('ceil', function() {
+		assert.equal(f.ceil(0.1234, 2), 0.13);
+		assert.equal(f.ceil(0.005, 2), 0.01);
+		assert.equal(f.ceil(1.009999, 4), 1.01);
+		assert.equal(f.ceil(1.00499, 2), 1.01);
+		assert.equal(f.ceil(1.005, 2), 1.01);
+		assert.equal(f.ceil(28973, 2), 28973);
 	});
 
 	it('equals', function() {

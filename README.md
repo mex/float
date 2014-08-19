@@ -1,8 +1,8 @@
 # Float
-Travis build status:  
+Travis build status:
 [![Build Status](https://travis-ci.org/mex/float.png)](https://travis-ci.org/mex/float)
 
-GitHub repository: [github.com/mstorgaard/float](http://github.com/mex/float)  
+GitHub repository: [github.com/mex/float](http://github.com/mex/float)
 NPM package: [npmjs.org/package/float](http://npmjs.org/package/float)
 
 ## Install
@@ -26,6 +26,20 @@ if (f.equals(ab, c) {
 ## Documentation
 * `round(number, precision)`
    * Rounds the number to the given number of decimals.
+   * Parameters:
+      * number (float)
+      * precision (integer): Number of decimals
+   * Return:
+      * float
+* `floor(number, precision)`
+   * Floors the number to the given number of decimals.
+   * Parameters:
+      * number (float)
+      * precision (integer): Number of decimals
+   * Return:
+      * float
+* `ceil(number, precision)`
+   * Ceils the number to the given number of decimals.
    * Parameters:
       * number (float)
       * precision (integer): Number of decimals
