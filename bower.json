@@ -1,0 +1,31 @@
+{
+  "name": "float",
+  "version": "0.2.0",
+  "homepage": "https://github.com/mex/float",
+  "authors": [
+    "Michael Storgaard <float@mex.io>"
+  ],
+  "description": "Provides methods for comparing and calculating with floating point numbers",
+  "main": "src/float.js",
+  "keywords": [
+    "float",
+    "integers",
+    "numbers",
+    "integer",
+    "number",
+    "calculation",
+    "comparing",
+    "comparison",
+    "calculating",
+    "compare",
+    "calculate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
