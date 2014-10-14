@@ -1,5 +1,5 @@
 # Float
-[![Build Status](https://travis-ci.org/mex/float.png)](https://travis-ci.org/mex/float) [![Code Climate](https://codeclimate.com/github/mex/float/badges/gpa.svg)](https://codeclimate.com/github/mex/float)
+[![Build Status](https://travis-ci.org/mex/float.png)](https://travis-ci.org/mex/float) [![Code Climate](https://codeclimate.com/github/mex/float/badges/gpa.svg)](https://codeclimate.com/github/mex/float) [![Code Climate](https://codeclimate.com/github/mex/float/badges/gpa.svg)](https://codeclimate.com/github/mex/float)
 
 GitHub repository: [github.com/mex/float](http://github.com/mex/float)
 
