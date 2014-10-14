@@ -1,6 +1,5 @@
 # Float
-Travis build status:
-[![Build Status](https://travis-ci.org/mex/float.png)](https://travis-ci.org/mex/float)
+[![Build Status](https://travis-ci.org/mex/float.png)](https://travis-ci.org/mex/float) [![Code Climate](https://codeclimate.com/repos/543d1af5e30ba040e3000360/badges/541e30f748b20bd0302a/gpa.svg)](https://codeclimate.com/repos/543d1af5e30ba040e3000360/feed)
 
 GitHub repository: [github.com/mex/float](http://github.com/mex/float)
 
