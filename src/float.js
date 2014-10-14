@@ -39,7 +39,7 @@ module.exports = {
     return decimalAdjust('ceil', v, d);
   },
   equals: function(a, b, d) {
-    return round(a, d) == round(b, d);
+    return round(a, d) === round(b, d);
   },
   lessThan: function(a, b, d) {
     return round(a, d) < round(b, d);
