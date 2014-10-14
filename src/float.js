@@ -2,6 +2,8 @@
  * Credit: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
  */
  var decimalAdjust = function(type, value, exp) {
+  value = value || 0;
+  exp = exp === undefined ? -2 : -Math.abs(exp);
   // If the exp is undefined or zero...
   if (typeof exp === 'undefined' || +exp === 0) {
     return Math[type](value);
@@ -21,21 +23,15 @@
 };
 
 var round = function(v, d) {
-  v = v || 0;
-  d = d === undefined ? -2 : -Math.abs(d);
   return decimalAdjust('round', v, d);
 };
 
 module.exports = {
   round: round,
   floor: function(v, d) {
-    v = v || 0;
-    d = d === undefined ? -2 : -Math.abs(d);
     return decimalAdjust('floor', v, d);
   },
   ceil: function(v, d) {
-    v = v || 0;
-    d = d === undefined ? -2 : -Math.abs(d);
     return decimalAdjust('ceil', v, d);
   },
   equals: function(a, b, d) {
